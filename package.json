@@ -1,7 +1,7 @@
 {
   "name": "formily-expression-highlight",
-  "displayName": "Formily_Expression",
-  "description": "formily scope highlight plugin",
+  "displayName": "formily-expression-highlight",
+  "description": "formily expression highlight vscode plugin",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.79.2"
