@@ -19,7 +19,7 @@
     "grammars": [
       {
         "path": "./syntaxes/injection.json",
-        "scopeName": "todo-comment.injection",
+        "scopeName": "formily",
         "injectTo": [
           "source.js",
           "source.ts",
