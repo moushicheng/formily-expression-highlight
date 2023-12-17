@@ -3,6 +3,7 @@
   "displayName": "formily-expression-highlight",
   "description": "formily expression highlight vscode plugin",
   "version": "0.0.1",
+  "publisher": "moushicheng",
   "engines": {
     "vscode": "^1.80.0"
   },
