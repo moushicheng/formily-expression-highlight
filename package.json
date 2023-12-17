@@ -1,0 +1,53 @@
+{
+  "name": "formily-expression-highlight",
+  "displayName": "Formily_Expression",
+  "description": "formily scope highlight plugin",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.79.2"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": {
+      "title": "Formily Scope",
+      "command": "Formily Scope"
+    },
+    "grammars": [
+      {
+        "path": "./syntaxes/injection.json",
+        "scopeName": "todo-comment.injection",
+        "injectTo": [
+          "source.js",
+          "source.ts",
+          "source.tsx",
+          "source.ts"
+        ]
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "20.2.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "eslint": "^8.41.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.3",
+    "@vscode/test-electron": "^2.3.2"
+  }
+}
