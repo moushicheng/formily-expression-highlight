@@ -1,6 +1,10 @@
 {
   "scopeName": "formily",
-  "injectionSelector": "L:string.quoted.double",
+  "injectionSelector": [
+    "L:string.quoted.double",
+    "L:string.quoted.single",
+    "string.template"
+  ],
   "patterns": [
     {
       "include": "#formily-expression"
